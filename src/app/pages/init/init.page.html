@@ -1,10 +1,12 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>init</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Ionic App"></app-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item routerLink="/action-sheet" detail>
+      <ion-label>John Cena</ion-label>
+    </ion-item>
+  </ion-list>
+
   <ion-button color="danger" routerLink="/alert">Alerts</ion-button>
   <ion-button routerLink="/action-sheet">Tabs</ion-button>
 </ion-content>
