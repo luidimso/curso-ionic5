@@ -20,6 +20,10 @@ export class InitPage implements OnInit {
       icon: "card",
       nome: "Cards",
       link: "/cards"
+    },{
+      icon: "calendar",
+      nome: "Dates",
+      link: "/dates"
     }
   ];
 

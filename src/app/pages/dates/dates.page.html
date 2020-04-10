@@ -1,0 +1,40 @@
+<app-header title="Cards"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Simple date</ion-label>
+      <ion-datetime
+        placeholder="Date"
+        display-format="DD/MM/YYYY"
+        cancelText="Cancel it"
+        [ngModel]="todayDate.toISOString()"
+        (ionChange)="changeDate($event)">
+      </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date interval</ion-label>
+      <ion-datetime
+        placeholder="Date"
+        display-format="DD/MM/YYYY"
+        cancelText="Cancel it"
+        [ngModel]="todayDate.toISOString()"
+        min="1998-08-28"
+        max="2020-08-28">
+      </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Only year</ion-label>
+      <ion-datetime
+        placeholder="Date"
+        display-format="YYYY"
+        cancelText="Cancel it"
+        [ngModel]="todayDate.toISOString()"
+        min="1998"
+        max="2020">
+      </ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>
