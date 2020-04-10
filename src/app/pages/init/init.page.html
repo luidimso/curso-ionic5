@@ -2,8 +2,9 @@
 
 <ion-content>
   <ion-list>
-    <ion-item routerLink="/action-sheet" detail>
-      <ion-label>John Cena</ion-label>
+    <ion-item *ngFor="let l of list" [routerLink]="l.link" detail>
+      <ion-icon [name]="l.icon" slot="start"></ion-icon>
+      <ion-label>{{l.nome}}</ion-label>
     </ion-item>
   </ion-list>
 

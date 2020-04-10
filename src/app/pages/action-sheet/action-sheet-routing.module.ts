@@ -6,7 +6,16 @@ import { ActionSheetPage } from './action-sheet.page';
 const routes: Routes = [
   {
     path: '',
-    component: ActionSheetPage
+    component: ActionSheetPage,
+    children: [
+      {
+        path: 'alert',
+        loadChildren: '../alert/alert.module#AlertPageModule'
+      },{
+        path: 'init',
+        loadChildren: '../init/init.module#InitPageModule'
+      }
+    ]
   }
 ];
 
