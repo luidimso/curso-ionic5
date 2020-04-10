@@ -16,6 +16,10 @@ export class InitPage implements OnInit {
       icon: "tablet-landscape",
       nome: "Tabs",
       link: "/action-sheet"
+    },{
+      icon: "card",
+      nome: "Cards",
+      link: "/cards"
     }
   ];
 
