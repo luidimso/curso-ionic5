@@ -1,5 +1,5 @@
-<app-header title="Alert page"></app-header>
+<app-header [title]="title || 'Alert Page'"></app-header>
 
 <ion-content>
-
+  <ion-button color="primary" expand="full" (click)="presentAlert()">Message</ion-button>
 </ion-content>
