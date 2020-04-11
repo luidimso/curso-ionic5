@@ -19,5 +19,9 @@
     "icon": "text",
     "nome": "Inputs",
     "link": "/inputs"
+  },{
+    "icon": "albums",
+    "nome": "Slide",
+    "link": "/slide"
   }
 ]
