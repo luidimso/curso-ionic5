@@ -1,0 +1,23 @@
+[
+  {
+    "icon": "alert-circle",
+    "nome": "Alert",
+    "link": "/alert"
+  },{
+    "icon": "tablet-landscape",
+    "nome": "Tabs",
+    "link": "/action-sheet"
+  },{
+    "icon": "card",
+    "nome": "Cards",
+    "link": "/cards"
+  },{
+    "icon": "calendar",
+    "nome": "Dates",
+    "link": "/dates"
+  },{
+    "icon": "text",
+    "nome": "Inputs",
+    "link": "/inputs"
+  }
+]

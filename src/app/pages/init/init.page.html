@@ -2,7 +2,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let l of list" [routerLink]="l.link" detail>
+    <ion-item *ngFor="let l of list | async" [routerLink]="l.link" detail>
       <ion-icon [name]="l.icon" slot="start"></ion-icon>
       <ion-label>{{l.nome}}</ion-label>
     </ion-item>

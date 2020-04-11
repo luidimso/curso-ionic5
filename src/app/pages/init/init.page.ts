@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Components } from 'src/app/model/component';
+import { Observable } from 'rxjs';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-init',
@@ -7,39 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InitPage implements OnInit {
 
-  list:Components[] = [
-    {
-      icon: "alert-circle",
-      nome: "Alert",
-      link: "/alert"
-    },{
-      icon: "tablet-landscape",
-      nome: "Tabs",
-      link: "/action-sheet"
-    },{
-      icon: "card",
-      nome: "Cards",
-      link: "/cards"
-    },{
-      icon: "calendar",
-      nome: "Dates",
-      link: "/dates"
-    },{
-      icon: "text",
-      nome: "Inputs",
-      link: "/inputs"
-    }
-  ];
+  list:Observable<Components[]>;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.list = this.dataService.getMenu();
   }
 
-}
-
-interface Components{
-  icon:string,
-  nome:string,
-  link:string
 }
