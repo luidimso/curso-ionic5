@@ -23,5 +23,9 @@
     "icon": "albums",
     "nome": "Slide",
     "link": "/slide"
+  },{
+    "icon": "warning",
+    "nome": "Toast",
+    "link": "/toast"
   }
 ]
