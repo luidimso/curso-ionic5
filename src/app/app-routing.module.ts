@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'grid',
     loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
   }
 ];
 @NgModule({

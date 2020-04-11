@@ -25,9 +25,9 @@ export class InitPage implements OnInit {
       nome: "Dates",
       link: "/dates"
     },{
-      icon: "grid",
-      nome: "Grid",
-      link: "/grid"
+      icon: "text",
+      nome: "Inputs",
+      link: "/inputs"
     }
   ];
 
